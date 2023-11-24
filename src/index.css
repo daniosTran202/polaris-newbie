@@ -275,38 +275,6 @@ code {
   }
 }
 
-/* style skeleton */
-.sumit-section-skeleton .Polaris-Card {
-  padding: 6rem;
-}
-.sumit-section-skeleton .Polaris-Card__Section {
-  width: 300px;
-}
-.recent-tasks-skeleton {
-  margin-top: 4rem;
-}
-.sidebar-skeleton {
-  min-width: 240px;
-  width: 240px;
-}
-.Polaris-SkeletonPage__Header {
-  padding: 0 !important;
-}
-.Polaris-SkeletonPage__Content {
-  padding-top: 0 !important;
-}
-.Polaris-SkeletonPage__SkeletonTitle {
-  height: 4rem !important;
-}
-@media screen and (max-width: 768px) {
-  .sumit-section-skeleton .Polaris-Card {
-    padding: 3rem;
-  }
-  .sumit-section-skeleton .Polaris-Card__Section {
-    width: 200px;
-  }
-}
-
 .Polaris-TopBar {
   position: relative;
   display: flex;
