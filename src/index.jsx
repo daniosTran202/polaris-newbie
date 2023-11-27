@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
 import "@shopify/polaris/build/esm/styles.css";
 import { AppProvider } from "@shopify/polaris";
 import { BrowserRouter } from "react-router-dom";
@@ -19,5 +18,3 @@ root.render(
     </AppProvider>
   </BrowserRouter>
 );
-
-reportWebVitals();

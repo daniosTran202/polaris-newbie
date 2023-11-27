@@ -30,8 +30,11 @@ import {
   GiftCardMajor,
   PhoneMajor,
 } from "@shopify/polaris-icons";
+import { useGlobalContext } from "./context/context";
+import SkeletonExample from "./components/Home/SkeletonExample";
 
 function App() {
+  const { showSkeleton } = useGlobalContext();
   const skipToContentRef = useRef(null);
   const location = useLocation();
   const [userMenuActive, setUserMenuActive] = useState(false);
@@ -179,21 +182,24 @@ function App() {
       />
     </Navigation>
   );
-
-  return (
-    <AppProvider>
-      <Frame
-        topBar={topBarMarkup}
-        navigation={navigationMarkup}
-        logo={logo}
-        showMobileNavigation={mobileNavigationActive}
-        onNavigationDismiss={toggleMobileNavigationActive}
-        skipToContentTarget={skipToContentRef.current}
-      >
-        <RoutesNav />
-      </Frame>
-    </AppProvider>
-  );
+  if (showSkeleton) {
+    return <SkeletonExample />;
+  } else {
+    return (
+      <AppProvider>
+        <Frame
+          topBar={topBarMarkup}
+          navigation={navigationMarkup}
+          logo={logo}
+          showMobileNavigation={mobileNavigationActive}
+          onNavigationDismiss={toggleMobileNavigationActive}
+          skipToContentTarget={skipToContentRef.current}
+        >
+          <RoutesNav />
+        </Frame>
+      </AppProvider>
+    );
+  }
 }
 
 export default App;
