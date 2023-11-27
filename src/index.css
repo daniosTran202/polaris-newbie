@@ -158,7 +158,7 @@ code {
 .submit-img__mountain {
   width: 250px;
   left: 45%;
-  position: absolute;
+  position: relative;
   top: 50%;
 }
 @media screen and (max-width: 992px) {
@@ -290,4 +290,26 @@ code {
 
 .Polaris-Navigation {
   border-right: 1px solid rgb(225, 225, 231);
+}
+
+.Polaris-TopBar-Menu__Activator--userMenu {
+  background-color: rgb(253, 253, 255);
+  color: #1d1d1d;
+  flex-direction: row-reverse;
+}
+
+.Polaris-TopBar-Menu__Activator--userMenu:hover {
+  background-color: rgb(253, 253, 255);
+}
+
+.Polaris-TopBar-UserMenu__Message > p {
+  color: seagreen;
+}
+.Polaris-TopBar-UserMenu__Details > p {
+  font-size: 0.8rem;
+}
+
+.Polaris-Avatar--sizeMd {
+  width: 2rem;
+  border-radius: 1.5rem;
 }

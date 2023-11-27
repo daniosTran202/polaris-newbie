@@ -67,14 +67,17 @@ function App() {
       </div>
       <Button>Submit a new task</Button>
       <Icon source={NotificationMajor} color="base" />
-      <TopBar.UserMenu
-        actions={userMenuActions}
-        name="Store name 1"
-        detail={<Text variation="positive">Subscribe now</Text>}
-        initials="🦄"
-        open={userMenuActive}
-        onToggle={toggleUserMenuActive}
-      />
+
+      <div className="c">
+        <TopBar.UserMenu
+          actions={userMenuActions}
+          initials="🦄"
+          name="Store Name 1"
+          detail={<Text variant="bodySm">Subscribe now</Text>}
+          open={userMenuActive}
+          onToggle={toggleUserMenuActive}
+        />
+      </div>
     </div>
   );
 
