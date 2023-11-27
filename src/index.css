@@ -280,5 +280,14 @@ code {
   display: flex;
   height: 3.5rem;
   box-shadow: var(--p-shadow-top-bar);
-  background-color: rgba(246, 246, 247, 1);
+  background-color: rgb(253, 253, 255);
+}
+
+.Polaris-Frame__Content,
+.Polaris-Navigation {
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.Polaris-Navigation {
+  border-right: 1px solid rgb(225, 225, 231);
 }
